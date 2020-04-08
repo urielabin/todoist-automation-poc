@@ -1,0 +1,21 @@
+{
+  "extends": ["airbnb", "prettier", "plugin:wdio/recommended"],
+  "plugins": ["prettier", "wdio"],
+  "rules": {
+    "import/no-unresolved": "error",
+    "import/order": "off",
+    "import/named": "off",
+    "import/default": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": ["off"],
+    "react/display-name": ["off"],
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "printWidth": 100,
+        "semi": true
+      }
+    ]
+  }
+}
