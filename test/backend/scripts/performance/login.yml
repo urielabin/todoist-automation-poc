@@ -13,7 +13,7 @@ scenarios:
       - post:
           url: '/Users/login'
           json:
-            username: '{{ $processEnvironment.EMAIL}}'
-            password: '{{ $processEnvironment.PASSWORD }}'
+            username: '{{$processEnvironment.EMAIL}}'
+            password: '{{$processEnvironment.PASSWORD}}'
             expect:
               - statusCode: 200
