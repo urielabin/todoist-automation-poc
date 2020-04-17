@@ -1,11 +1,11 @@
 {
-  "name": "todoist-wdio-supertest-poc",
+  "name": "wdio-supertest-poc",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "jest ./test/backend/scripts/api",
     "test:watch": "jest --watch",
-    "test-performance": "artillery run ./test/backend/scripts/performance/hello.yml",
+    "test-performance": "artillery run ./test/backend/scripts/performance/login.yml",
     "test-frontend": "./node_modules/.bin/wdio wdio.conf.js"
   },
   "devDependencies": {

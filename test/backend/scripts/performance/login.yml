@@ -1,0 +1,19 @@
+config:
+  target: '{{$processEnvironment.URL}}'
+  plugins:
+    expect: {}
+  phases:
+    - duration: 10
+      arrivalRate: 20
+  defaults:
+    headers:
+      x-my-service-auth: ''
+scenarios:
+  - flow:
+      - post:
+          url: '/Users/login'
+          json:
+            username: '{{ $processEnvironment.EMAIL}}'
+            password: '{{ $processEnvironment.PASSWORD }}'
+            expect:
+              - statusCode: 200
