@@ -1,5 +1,5 @@
 config:
-  target: '{{$processEnvironment.URL}}'
+  target: '{{$process.env.URL}}'
   plugins:
     expect: {}
   phases:
@@ -13,7 +13,7 @@ scenarios:
       - post:
           url: '/Users/login'
           json:
-            username: '{{$processEnvironment.EMAIL}}'
-            password: '{{$processEnvironment.PASSWORD}}'
+            username: '{{$process.env.EMAIL}}'
+            password: '{{$process.env.PASSWORD}}'
             expect:
               - statusCode: 200
