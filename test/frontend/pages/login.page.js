@@ -1,27 +1,21 @@
 import Page from './page';
 
 class LoginPage extends Page {
-  // eslint-disable-next-line class-methods-use-this
   get email() {
     return $('#email');
   }
-
-  // eslint-disable-next-line class-methods-use-this
   get password() {
     return $('#password');
   }
 
-  // eslint-disable-next-line class-methods-use-this
   get submitBtn() {
     return $('button.submit_btn');
   }
 
-  // eslint-disable-next-line class-methods-use-this
   get loginBtn() {
     return $('a=Login');
   }
 
-  // eslint-disable-next-line class-methods-use-this
   get loginIframe() {
     return $('iframe._3ga5X');
   }
